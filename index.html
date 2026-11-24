@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Alex Rivera | Full-Stack Engineer & Product Designer</title>
+  <meta name="title" content="Alex Rivera | Full-Stack Engineer & Product Designer">
+  <meta name="description" content="Portfolio of Alex Rivera — Computer Science & HCI student crafting resilient full-stack systems and intuitive digital products.">
+  <meta name="keywords" content="student portfolio, software engineer, web developer, UI UX designer, computer science, full stack, React, TypeScript, Python">
+  <meta name="author" content="Alex Rivera">
+  <meta name="theme-color" content="#080c14">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexrivera.dev/">
+  <meta property="og:title" content="Alex Rivera | Full-Stack Engineer & Product Designer">
+  <meta property="og:description" content="Computer Science & HCI student building high-performance web applications and intuitive interfaces.">
+
+  <!-- Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Ambient Ambient Background Glows -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION
+       =================================================================== -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Alex Rivera Home">
+        <div class="brand-icon">AR</div>
+        <span>Alex Rivera</span>
+        <span class="brand-badge">Available</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav id="nav-menu" class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle theme">
+          <!-- Sun Icon (for light mode) -->
+          <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <!-- Moon Icon (for dark mode) -->
+          <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <!-- Resume CTA -->
+        <a href="assets/resume-sample.pdf" download class="btn btn-sm btn-outline" aria-label="Download Resume">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+          Resume
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       MAIN CONTENT
+       =================================================================== -->
+  <main>
+    <!-- --- SECTION 1: HERO --- -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content reveal">
+            <div class="hero-status-pill">
+              <span class="status-dot"></span>
+              <span>Available for Summer 2025/2026 Internships</span>
+            </div>
+
+            <h1 class="hero-title">
+              Crafting digital products with
+              <span class="accent-gradient">architectural precision</span> & human-centered design.
+            </h1>
+
+            <p class="hero-description">
+              Hi, I'm <strong style="color: var(--text-main);">Alex Rivera</strong> — a Computer Science & HCI student at Stanford University. I bridge full-stack engineering, distributed systems, and modern UI design to build products that scale effortlessly.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary hover-lift">
+                Explore Projects
+                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-outline hover-lift">
+                Get In Touch
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-pills">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="GitHub Profile" title="GitHub">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="LinkedIn Profile" title="LinkedIn">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="Twitter Profile" title="Twitter / X">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+              </a>
+              <a href="mailto:alex.rivera.dev@gmail.com" class="social-pill-link" aria-label="Send direct email" title="Direct Email">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Code Terminal Window -->
+          <div class="hero-visual reveal reveal-delay-2" style="position: relative;">
+            <!-- Floating Badge 1 -->
+            <div class="floating-hero-badge floating-hero-badge-1">
+              <div class="badge-icon-box">🏆</div>
+              <div>
+                <div class="badge-text-title">TreeHacks 2024 Winner</div>
+                <div class="badge-text-desc">1st Place out of 1,600+ devs</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2 -->
+            <div class="floating-hero-badge floating-hero-badge-2">
+              <div class="badge-icon-box">⚡</div>
+              <div>
+                <div class="badge-text-title">3.94 CS GPA</div>
+                <div class="badge-text-desc">Dean's Honor List</div>
+              </div>
+            </div>
+
+            <div class="hero-visual-card">
+              <div class="card-topbar">
+                <div class="window-dots">
+                  <div class="dot dot-red"></div>
+                  <div class="dot dot-yellow"></div>
+                  <div class="dot dot-green"></div>
+                </div>
+                <div class="window-title">engineer_profile.ts</div>
+                <div style="width: 40px;"></div>
+              </div>
+
+              <div class="card-body-editor">
+                <p><span class="code-keyword">const</span> <span class="code-variable">studentEngineer</span> = {</p>
+                <p style="padding-left: 20px;"><span class="code-variable">name</span>: <span class="code-string">"Alex Rivera"</span>,</p>
+                <p style="padding-left: 20px;"><span class="code-variable">university</span>: <span class="code-string">"Stanford University"</span>,</p>
+                <p style="padding-left: 20px;"><span class="code-variable">degree</span>: <span class="code-string">"B.S. in Computer Science"</span>,</p>
+                <p style="padding-left: 20px;"><span class="code-variable">coreStack</span>: [<span class="code-string">"React"</span>, <span class="code-string">"TypeScript"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Node"</span>],</p>
+                <p style="padding-left: 20px;"><span class="code-variable">passions</span>: [<span class="code-string">"Systems Architecture"</span>, <span class="code-string">"UI/UX"</span>],</p>
+                <p style="padding-left: 20px;"><span class="code-variable">internshipSeeking</span>: <span class="code-boolean">true</span>,</p>
+                <p style="padding-left: 20px;"><span class="code-variable">execute</span>: () =&gt; <span class="code-string">"Building the future of software"</span></p>
+                <p>};</p>
+                <p class="code-comment" style="margin-top: 12px;">// Ready to make a real impact from Day 1.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION 2: ABOUT & PROFILE --- -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-tag">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+          Profile & Background
+        </div>
+        <h2 class="section-title">Driven by engineering excellence & thoughtful user experience</h2>
+        <p class="section-subtitle">A glimpse into my academic trajectory, design philosophy, and core foundations.</p>
+
+        <div class="about-grid">
+          <!-- Narrative -->
+          <div class="about-narrative reveal">
+            <p>
+              I am a third-year undergraduate student pursuing a B.S. in Computer Science with a dual focus on Artificial Intelligence and Human-Computer Interaction. My fascination with software began with a fundamental question: <em>How can we engineer complex systems so intuitive that technology dissolves into the background?</em>
+            </p>
+            <p>
+              Over the past three years, I have engineered distributed real-time platforms, optimized deep learning retrieval pipelines, and designed design systems adopted by hundreds of collegiate developers. Whether I am tuning database queries in PostgreSQL or fine-tuning micro-interactions in Figma and Tailwind CSS, I operate with an uncompromising standard of craft.
+            </p>
+            <p>
+              Outside of academics, I lead technical workshops as President of our Web Development Society and contribute to open-source developer tooling.
+            </p>
+
+            <div class="about-highlight-box">
+              "Great software isn't just about clean code—it's about deep empathy for the human being using it."
+            </div>
+          </div>
+
+          <!-- Academic Snapshot Card -->
+          <div class="academic-card reveal reveal-delay-2">
+            <div class="degree-header">
+              <div>
+                <h3 class="degree-title">B.S. in Computer Science</h3>
+                <div class="degree-univ">Stanford University (2022 - 2026)</div>
+              </div>
+              <span class="gpa-pill">GPA 3.94 / 4.0</span>
+            </div>
+
+            <div class="coursework-title">Relevant Upper-Division Coursework</div>
+            <div class="course-chips">
+              <span class="course-chip">Data Structures &amp; Algorithms</span>
+              <span class="course-chip">Operating Systems</span>
+              <span class="course-chip">UI/UX Design Systems</span>
+              <span class="course-chip">Distributed Databases</span>
+              <span class="course-chip">Machine Learning</span>
+              <span class="course-chip">Computer Networks</span>
+              <span class="course-chip">Full-Stack Architecture</span>
+              <span class="course-chip">Human-Computer Interaction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics Grid -->
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <div class="stat-number">24+</div>
+            <div class="stat-label">Projects Built &amp; Shipped</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4x</div>
+            <div class="stat-label">Hackathon Victories</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">1,400+</div>
+            <div class="stat-label">GitHub Contributions</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">Top 3%</div>
+            <div class="stat-label">Dean's Honor List Rank</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION 3: SKILLS MATRIX --- -->
+    <section id="skills" class="section" style="background: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-tag">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          Technical Arsenal
+        </div>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Modern languages, frameworks, and developer tools applied in production-grade environments.</p>
+
+        <!-- Category Filter Tabs -->
+        <div class="skills-filter-nav">
+          <button class="filter-btn skills-filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="filter-btn skills-filter-btn" data-filter="frontend">Frontend Architecture</button>
+          <button class="filter-btn skills-filter-btn" data-filter="backend">Backend &amp; Cloud</button>
+          <button class="filter-btn skills-filter-btn" data-filter="design">UI/UX &amp; Systems</button>
+          <button class="filter-btn skills-filter-btn" data-filter="tools">DevOps &amp; Tools</button>
+        </div>
+
+        <!-- Skills Cards Grid (Hydrated dynamically by main.js) -->
+        <div id="skills-grid" class="skills-grid">
+          <!-- Populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION 4: FEATURED PROJECTS --- -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-tag">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+          Featured Work
+        </div>
+        <h2 class="section-title">Projects with real-world impact</h2>
+        <p class="section-subtitle">End-to-end applications demonstrating distributed architecture, performance optimization, and refined UI craftsmanship.</p>
+
+        <!-- Project Filter Tabs -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn project-filter-btn" data-filter="fullstack">Full Stack &amp; Systems</button>
+          <button class="filter-btn project-filter-btn" data-filter="ai">AI &amp; Data</button>
+          <button class="filter-btn project-filter-btn" data-filter="uiux">UI/UX &amp; Interactive</button>
+        </div>
+
+        <!-- Projects Grid Container (Hydrated by main.js) -->
+        <div id="projects-grid" class="projects-grid">
+          <!-- Populated from data.js with interactive modals -->
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION 5: ACHIEVEMENTS & LEADERSHIP --- -->
+    <section id="achievements" class="section" style="background: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-tag">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          Honors &amp; Impact
+        </div>
+        <h2 class="section-title">Achievements & Leadership</h2>
+        <p class="section-subtitle">Recognitions, hackathon victories, community mentorship, and industry certifications.</p>
+
+        <!-- Vertical Timeline Container -->
+        <div id="achievements-timeline" class="timeline-container">
+          <!-- Populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- --- SECTION 6: CONTACT --- -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-tag">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          Get In Touch
+        </div>
+        <h2 class="section-title">Let's build something extraordinary together</h2>
+        <p class="section-subtitle">Whether you have an internship opportunity, a project collaboration, or simply want to chat about engineering and design, my inbox is always open.</p>
+
+        <div class="contact-wrapper">
+          <!-- Left: Direct Info Cards -->
+          <div class="contact-info-panel reveal">
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-card-title">Direct Email</div>
+                <div class="contact-card-value">alex.rivera.dev@gmail.com</div>
+                <button id="copy-email-btn" class="copy-email-btn" type="button" aria-label="Copy email address to clipboard">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
+                  Click to copy address
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-card-title">Location &amp; Timezone</div>
+                <div class="contact-card-value">San Francisco Bay Area, CA</div>
+                <div style="font-size: 0.8125rem; color: var(--text-dim); margin-top: 4px;">Pacific Time (PST / UTC-8) • Open to relocation</div>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-card-title">Office Hours &amp; Chat</div>
+                <div class="contact-card-value">15-Min Virtual Coffee</div>
+                <div style="font-size: 0.8125rem; color: var(--text-dim); margin-top: 4px;">Always excited to connect with engineering leaders &amp; fellow builders.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Validated Contact Form -->
+          <div class="contact-form-panel reveal reveal-delay-2">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Elena Rostova" required>
+                <div class="form-error-msg">Please enter your name</div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. elena@company.com" required>
+                <div class="form-error-msg">Please enter a valid email</div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject / Purpose</label>
+                <select id="contact-subject" class="form-select">
+                  <option value="internship">Internship / Co-op Opportunity</option>
+                  <option value="fulltime">New Grad Full-Time Role</option>
+                  <option value="project">Project Collaboration / Mentorship</option>
+                  <option value="other">General Inquiries &amp; Networking</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your team, project, or what you'd like to collaborate on..." required></textarea>
+                <div class="form-error-msg">Please write at least 10 characters</div>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%;">
+                Send Message
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       PROJECT CASE STUDY MODAL DIALOG
+       =================================================================== -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Project Case Study</h3>
+        <button id="modal-close" class="modal-close-btn" aria-label="Close project modal">&times;</button>
+      </div>
+      <div id="modal-body-content" class="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div id="modal-footer-content" class="modal-footer">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Scroll to top">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" width="20" height="20">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <a href="#hero" class="brand-logo">
+          <div class="brand-icon">AR</div>
+          <span>Alex Rivera</span>
+        </a>
+
+        <ul class="footer-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2025 Alex Rivera. Built with vanilla HTML5, CSS3 &amp; ES6+. Zero dependencies.</div>
+        <div>Designed for performance, accessibility &amp; fluid elegance.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
